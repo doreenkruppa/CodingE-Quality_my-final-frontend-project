@@ -61,6 +61,7 @@ ul {
   position: relative;
   background-color: white;
   z-index: 1;
+  overflow: auto;
 }
 .text {
   position: absolute;
@@ -68,6 +69,7 @@ ul {
   display: flex;
   flex-direction: column;
   padding: 10px;
+  overflow: auto;
 }
 .text div {
   text-align: left;
@@ -100,9 +102,11 @@ ul {
 .pioneers-cards-text {
   padding-left: 20px;
   text-align: left;
+  overflow: auto;
 }
 .pioneer-card {
   background-color: white;
+  overflow: auto;
 }
 .pioneers-form {
   width: 25%;
