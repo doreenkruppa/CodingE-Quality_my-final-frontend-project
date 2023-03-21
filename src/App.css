@@ -69,7 +69,6 @@ ul {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  overflow: scroll;
 }
 .text div {
   text-align: left;
