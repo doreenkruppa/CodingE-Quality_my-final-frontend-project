@@ -170,8 +170,8 @@ button {
   }
   .sidebar-container {
     width: 80%;
-    height: 300px;
-    overflow: scroll;
+    height: 200px;
+    overflow: auto;
     margin: auto;
     border: none;
   }
@@ -192,22 +192,22 @@ button {
     flex-direction: column;
   }
   .group-card {
-    width: 80vw;
+    min-width: 200px;
     height: 300px;
     margin: auto;
   }
   .group-form {
-    width: 80vw;
+    min-width: 200px;
     height: 300px;
     margin: auto;
   }
   .pioneer-card {
-    width: 80vw;
+    min-width: 200px;
     height: 300px;
     margin: auto;
   }
   .pioneers-form {
-    width: 80vw;
+    min-width: 200px;
     height: 300px;
     margin: auto;
   }
