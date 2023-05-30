@@ -7,7 +7,7 @@
 
 .home-container {
   display: flex;
-  flex-flow: row, wrap;
+  flex-flow: row;
   justify-content: space-evenly;
   padding-left: 10px;
 }
@@ -140,7 +140,11 @@ button {
 
 .ankerlinks {
   display: block;
-  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: baseline;
+  height: 20px;
   width: 150px;
   background-color: black;
   color: white;
@@ -164,7 +168,7 @@ button {
   .ankerlinks-container {
     justify-content: center;
   }
-  .sidebar {
+  .sidebar-container {
     display: none;
   }
   .pioneers-list-Container {
@@ -178,5 +182,21 @@ button {
   .home-container {
     display: flex;
     flex-direction: column;
+  }
+  .group-card,
+  .group-form,
+  .pioneer-card,
+  .pioneers-form {
+    width: 80vw;
+    height: 300px;
+    margin: auto;
+  }
+  .welcome-text {
+    width: 80%;
+    margin: auto;
+  }
+  .image-home {
+    width: 80vw;
+    margin: auto;
   }
 }

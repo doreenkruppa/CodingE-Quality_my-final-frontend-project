@@ -13,7 +13,7 @@ export default function PioneersList() {
         Women Pioneers in Programming & Computer Science:
       </h1>
       <div className="pioneers-list-Container">
-        <Sidebar className="sidebar" />
+        <Sidebar />
         <div>
           {pioneers &&
             pioneers.map((item, i) => <PioneersCard pioneer={item} key={i} />)}
