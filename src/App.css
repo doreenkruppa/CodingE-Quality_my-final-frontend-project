@@ -140,6 +140,7 @@ button {
 
 .ankerlinks {
   display: block;
+  height: 40px;
   width: 150px;
   background-color: black;
   color: white;
@@ -158,4 +159,24 @@ button {
 
 .events-list {
   height: 100vh;
+}
+@media screen and (max-width: 1024px) {
+  .ankerlinks-container {
+    justify-content: center;
+  }
+  .sidebar {
+    display: none;
+  }
+  .pioneers-list-Container {
+    display: flex;
+    flex-direction: column;
+  }
+  .groups-list-Container {
+    display: flex;
+    flex-direction: column;
+  }
+  .home-container {
+    display: flex;
+    flex-direction: column;
+  }
 }

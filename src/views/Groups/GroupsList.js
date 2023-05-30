@@ -15,7 +15,7 @@ export default function GroupsList() {
       </h1>
 
       <div className="groups-list-Container">
-        <Sidebar />
+        <Sidebar className="sidebar" />
         <div className="groups-cards-Container">
           {groups &&
             groups.map((item, i) => <GroupsCard group={item} key={i} />)}
