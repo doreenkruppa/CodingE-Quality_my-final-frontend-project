@@ -153,6 +153,7 @@ button {
   margin: 10px;
 }
 .ankerlinks-container {
+  border: 2px solid black;
   display: flex;
   flex-direction: row;
   justify-content: right;
