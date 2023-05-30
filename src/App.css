@@ -170,7 +170,10 @@ button {
   }
   .sidebar-container {
     width: 80%;
+    height: 300px;
+    overflow: scroll;
     margin: auto;
+    border: none;
   }
   .pioneers-list-Container {
     display: flex;
