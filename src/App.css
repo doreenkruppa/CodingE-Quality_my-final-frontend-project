@@ -38,18 +38,6 @@ ul {
   list-style: none;
   text-align: left;
 }
-.groups-list-Container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 10px;
-}
-.groups-cards-Container {
-  width: 80%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-}
 
 .group-form {
   width: 20%;
@@ -85,11 +73,18 @@ ul {
   margin-top: 25px;
   width: 35%;
 }
+
 .groups-list-Container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 10px;
+}
+.groups-cards-Container {
+  width: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
 }
 
 .pioneers-list-Container {
@@ -172,7 +167,10 @@ button {
     margin-top: 10px;
   }
   .sidebar-container {
-    background-color: beige;
+    display: none;
+  }
+  .groups-sidebar-Container {
+    display: none;
   }
   .pioneers-list-Container {
     display: flex;
@@ -182,24 +180,42 @@ button {
     display: flex;
     flex-direction: column;
   }
+  .groups-cards-container {
+    display: flex;
+    flex-direction: column;
+  }
   .home-container {
     display: flex;
     flex-direction: column;
   }
-  .group-card,
-  .group-form,
-  .pioneer-card,
+  .group-card {
+    width: 80vw;
+    height: 300px;
+    margin: auto;
+  }
+  .group-form {
+    width: 80vw;
+    height: 300px;
+    margin: auto;
+  }
+  .pioneer-card {
+    width: 80vw;
+    height: 300px;
+    margin: auto;
+  }
   .pioneers-form {
     width: 80vw;
     height: 300px;
     margin: auto;
   }
   .welcome-text {
-    width: 80%;
+    width: 80vw;
     margin: auto;
+    height: 300px;
   }
   .image-home {
     width: 80vw;
     margin: auto;
+    height: 300px;
   }
 }
