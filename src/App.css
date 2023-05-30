@@ -139,7 +139,8 @@ button {
 }
 
 .ankerlinks {
-  display: contents;
+  display: block;
+  width: 150px;
   background-color: black;
   color: white;
   text-decoration: none;
