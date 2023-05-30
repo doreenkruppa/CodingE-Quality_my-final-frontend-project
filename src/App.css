@@ -46,13 +46,12 @@ ul {
   height: 600px;
   padding: 10px;
   background-color: white;
-  overflow: scroll;
 }
 .group-card {
   position: relative;
   background-color: white;
   z-index: 1;
-  overflow: scroll;
+  overflow: auto;
 }
 .text {
   position: absolute;
@@ -102,7 +101,7 @@ ul {
 }
 .pioneer-card {
   background-color: white;
-  overflow: scroll;
+  overflow: auto;
 }
 .pioneers-form {
   width: 25%;
@@ -110,7 +109,6 @@ ul {
   padding: 10px;
   margin-top: 20px;
   background-color: white;
-  overflow: scroll;
 }
 .nav-link {
   margin: 0px 20px;
@@ -170,7 +168,7 @@ button {
   }
   .sidebar-container {
     width: 80%;
-    height: 200px;
+    height: 150px;
     overflow: auto;
     margin: auto;
     border: none;
@@ -200,6 +198,7 @@ button {
     min-width: 200px;
     height: 300px;
     margin: auto;
+    overflow: auto;
   }
   .pioneer-card {
     min-width: 200px;
@@ -210,6 +209,7 @@ button {
     min-width: 200px;
     height: 300px;
     margin: auto;
+    overflow: auto;
   }
   .welcome-text {
     width: 80vw;
