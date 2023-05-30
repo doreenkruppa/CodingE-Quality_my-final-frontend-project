@@ -10,6 +10,8 @@
   flex-flow: row;
   justify-content: space-evenly;
   padding-left: 10px;
+  margin-bottom: 10px;
+  overflow: scroll;
 }
 .welcome-text {
   padding: 20px 10px;
@@ -168,10 +170,30 @@ button {
   }
   .sidebar-container {
     display: none;
+    width: 0%;
+    height: 0%;
+    visibility: none;
+    z-index: -1;
+    opacity: 0;
   }
   .groups-sidebar-Container {
     display: none;
+    width: 0%;
+    height: 0%;
+    visibility: none;
+    z-index: -1;
+    opacity: 0;
   }
+
+  .pioneers-sidebar-Container {
+    display: none;
+    width: 0%;
+    height: 0%;
+    visibility: none;
+    z-index: -1;
+    opacity: 0;
+  }
+
   .pioneers-list-Container {
     display: flex;
     flex-direction: column;

@@ -11,7 +11,7 @@ export default function GroupsCard({ group }) {
 
         border: "1px solid black",
         padding: "10px",
-        width: "300px",
+        width: "40%",
         height: "340px",
         borderRadius: "20px",
         marginBottom: "20px",
