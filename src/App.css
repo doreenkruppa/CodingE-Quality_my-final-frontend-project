@@ -11,7 +11,7 @@
   justify-content: space-evenly;
   padding-left: 10px;
   margin-bottom: 10px;
-  overflow: scroll;
+  overflow: auto;
 }
 .welcome-text {
   padding: 20px 10px;
@@ -71,7 +71,7 @@ ul {
 }
 
 .image-home {
-  margin-top: 25px;
+  margin-top: 30px;
   width: 35%;
 }
 
