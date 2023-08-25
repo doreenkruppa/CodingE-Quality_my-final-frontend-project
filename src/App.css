@@ -47,7 +47,6 @@ ul {
   padding: 10px;
   background-color: black;
   color: white;
-  border: "1px solid black";
   border-radius: 20px;
 }
 .group-card {
@@ -113,7 +112,7 @@ ul {
   margin-top: 20px;
   background-color: black;
   color: white;
-  border: "1px solid black";
+
   border-radius: 20px;
 }
 .nav-link {
