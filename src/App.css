@@ -45,7 +45,8 @@ ul {
   width: 20%;
   height: 600px;
   padding: 10px;
-  background-color: white;
+  background-color: black;
+  color: white;
 }
 .group-card {
   position: relative;
@@ -108,7 +109,8 @@ ul {
   height: 600px;
   padding: 10px;
   margin-top: 20px;
-  background-color: white;
+  background-color: black;
+  color: white;
 }
 .nav-link {
   margin: 0px 20px;
