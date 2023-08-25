@@ -5,7 +5,12 @@ import "./App.css";
 export default function GroupsForm() {
   const { groups, setGroups } = useContext(GroupsContext);
   return (
-    <div className="group-form">
+    <div
+      className="group-form"
+      style={{
+        borderRadius: "20px",
+      }}
+    >
       <h3>
         Add a group or network which works on issues of feminist Coding here:
       </h3>
