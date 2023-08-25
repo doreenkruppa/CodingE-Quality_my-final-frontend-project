@@ -74,7 +74,7 @@
 
 - im Ordner "src" -> "views" wurden drei Unterordner angelegt für jede einzelne Seite/View (events, pioneers, groups)
 - in jedem einzelnen dieser View-Ordner wurden 3 files erstellt - list, card, form
-- jede einzelne dieser Seiten sollte via List-file eine Übersicht verschiedener events, pioneers bzw. groups zeigen, alle in einem bestimmten Format, das im file Cards definiert wurde, und durch eine Form am Ende der List-Seite von User\*innen ergänzt werden kann => Form und Cards wurden im List-file in der "function GroupsList" als Komponenten importiert und eingebunden (nesting)://
+- via List-files zeigen die jeweiligen Views/Seiten eine Übersicht verschiedener events, pioneers bzw. groups, alle in einem bestimmten Format, das im file "Cards" definiert wurde, und durch eine Form am Ende der List-Seite von User\*innen ergänzt werden kann => Form und Cards wurden im List-file in der "function GroupsList" als Komponenten importiert und eingebunden (nesting)://
 <div className="groups-list-Container">
   <Sidebar />
   <div className="groups-cards-Container"> {groups && groups.map((item, i) => <GroupsCard group={item} key={i} />)}
