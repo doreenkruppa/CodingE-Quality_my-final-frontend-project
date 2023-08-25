@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import "./App.css";
 import GroupsCard from "./GroupsCard";
 import { GroupsContext } from "../../context/GroupsContext";
 import GroupsForm from "./GroupsForm";
