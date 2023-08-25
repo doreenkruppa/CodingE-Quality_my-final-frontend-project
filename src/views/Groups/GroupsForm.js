@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { GroupsContext } from "../../context/GroupsContext";
+import "./App.css";
 
 export default function GroupsForm() {
   const { groups, setGroups } = useContext(GroupsContext);

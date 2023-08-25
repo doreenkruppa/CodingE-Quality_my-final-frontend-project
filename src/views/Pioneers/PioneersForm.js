@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { PioneersContext } from "../../context/PioneersContext";
+import "./App.css";
 
 export default function PioneersForm() {
   const { pioneers, setPioneers } = useContext(PioneersContext);
