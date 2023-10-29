@@ -21,7 +21,7 @@ export default function Sidebar() {
         flexDirection: "column",
       }}
     >
-      <div className="groups-sidebar-Container">
+      <div className="groups-sidebar-container">
         <p style={{ textAlign: "left", fontWeight: "bold" }}>
           all activist groups:
         </p>
@@ -30,7 +30,7 @@ export default function Sidebar() {
             <SidebarCard groupName={itemG.name} keyG={i} />
           ))}
       </div>
-      <div className="pioneers-sidebar-Container">
+      <div className="pioneers-sidebar-container">
         <p style={{ textAlign: "left", fontWeight: "bold" }}>all pioneers:</p>
         {pioneers &&
           pioneers.map((itemP, i) => (

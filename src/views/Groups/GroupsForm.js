@@ -1,19 +1,14 @@
 import React, { useContext } from "react";
 import { GroupsContext } from "../../context/GroupsContext";
-import "./App.css";
+import "../../App.css";
 
 export default function GroupsForm() {
   const { groups, setGroups } = useContext(GroupsContext);
   return (
-    <div
-      className="group-form"
-      style={{
-        borderRadius: "20px",
-      }}
-    >
-      <h3>
+    <div className="group-form">
+      <h4>
         Add a group or network which works on issues of feminist Coding here:
-      </h3>
+      </h4>
       <form
         onSubmit={(e) => {
           e.preventDefault();

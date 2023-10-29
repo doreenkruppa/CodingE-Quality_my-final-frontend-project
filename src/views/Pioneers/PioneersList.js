@@ -3,7 +3,7 @@ import { PioneersContext } from "../../context/PioneersContext";
 import PioneersCard from "./PioneersCard";
 import PioneersForm from "./PioneersForm";
 import Sidebar from "../../components/Sidebar/Sidebar";
-import "./App.css";
+import "../../App.css";
 
 export default function PioneersList() {
   const { pioneers } = useContext(PioneersContext);
