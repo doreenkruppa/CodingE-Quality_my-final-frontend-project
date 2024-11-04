@@ -19,7 +19,7 @@ export const starterGroups = [
   {
     name: "Heart of Code",
     description:
-      "Ein Hackspace für programmierende und technikbegeisterte Frauen (trans und cis), trans* und nicht-binäre Personen",
+      "Ein Hackspace für programmierende und technikbegeisterte Frauen (trans und cis), trans* und nicht-binäre Personen...",
     contact: "http://heartofcode.org/",
     img: "http://heartofcode.org/img/heartofcode42.jpg",
   },
