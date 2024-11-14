@@ -18,7 +18,7 @@ h1 {
 }
 h2 {
   font-size: clamp(1.3rem, 2.7vw, 3rem);
-  margin: 20px 10px;
+  margin: 10px 10px;
 }
 h3 {
   font-size: clamp(1.2rem, 2.5vw, 2.7rem);
@@ -142,30 +142,45 @@ ul {
   width: 100%;
 }
 
-/*pages:*/
+/*Views:*/
 
-/* home_page*/
+/* view_home*/
 .home-container {
   display: flex;
-  flex-flow: row;
-  justify-content: space-evenly;
-  margin: 10px;
-}
-
-.image-home {
-  margin-top: 30px;
-  width: 35%;
-}
-.welcome-text {
-  width: 30%;
-}
-
-.welcome-text p,
-.welcome-text ul {
+  flex-flow: column;
+  margin: 30px;
   text-align: justify;
+  align-items: center;
+  gap: 10px;
+}
+.home-info-cards-sub-views {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-top: 1px solid black;
+}
+.home-info-cards-img {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: baseline;
+  padding: 5px;
+  background-color: white;
 }
 
-/*activist_groups_pages*/
+.image-home img {
+  width: 250px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.home-info-cards-sub-views .nav-link {
+  width: 90px;
+  text-align: center;
+  align-self: flex-end;
+}
+/*view_activist_groups*/
 
 .groups-list-Container {
   display: flex;
@@ -199,7 +214,7 @@ ul {
   text-align: justify;
 }
 
-/*pioneers_page*/
+/*view_pioneers*/
 .pioneers-list-Container {
   display: flex;
   flex-direction: column;
@@ -241,7 +256,7 @@ button {
   margin-top: 10px;
 }
 
-/*events_page"*/
+/*view_events*/
 .events-list {
   height: 100vh;
 }
