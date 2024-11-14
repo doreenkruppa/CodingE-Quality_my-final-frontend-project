@@ -1,12 +1,11 @@
 import React, { useContext } from "react";
 import { PioneersContext } from "../../context/PioneersContext";
-import "../../App.css";
 
 export default function PioneersForm() {
   const { pioneers, setPioneers } = useContext(PioneersContext);
   return (
     <div className="pioneers-form">
-      <h4>Add another Women Pioneer here:</h4>
+      <h3>Add another Women Pioneer:</h3>
       <form
         onSubmit={(e) => {
           e.preventDefault();

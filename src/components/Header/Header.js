@@ -1,31 +1,39 @@
-import React from "react";
-import { FaAlignJustify } from "react-icons/fa";
+import React, { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 import { NavLink } from "react-router-dom";
 
 export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
   return (
-    <div id="header">
-      <div id="navbar">
-        <div id="nav-icon">
-          <FaAlignJustify />
+    <div className="header">
+      <div className="navbar">
+        <div className="nav-icon" onClick={toggleMenu}>
+          {menuOpen ? <FaTimes /> : <FaBars />}
         </div>
-        <div id="nav-link-list">
+        <div className={`nav-side-menu ${menuOpen ? "in" : "out"}`}>
           <NavLink className="nav-link" to="/">
             home
           </NavLink>
+
           <NavLink className="nav-link" to="/groups">
             activist groups & networks
           </NavLink>
+
           <NavLink className="nav-link" to="/pioneers">
             pioneers
           </NavLink>
+
           <NavLink className="nav-link" to="/events">
             events
           </NavLink>
         </div>
       </div>
-      <h1>Women in Coding</h1>
+      <h1>Coding E-Quality</h1>
     </div>
   );
 }

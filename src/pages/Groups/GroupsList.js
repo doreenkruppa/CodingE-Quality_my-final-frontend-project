@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import "../../App.css";
+
 import GroupsCard from "./GroupsCard";
 import { GroupsContext } from "../../context/GroupsContext";
 import GroupsForm from "./GroupsForm";
@@ -9,23 +9,23 @@ export default function GroupsList() {
 
   return (
     <>
-      <h2 id="group-list-top">
-        {" "}
-        activist groups and networks working on the topic of feminist
-        programming:
-      </h2>
-
       <div className="groups-list-Container">
-        <div className="groups-cards-Container">
+        <h2 id="groups-list-top">
+          {" "}
+          activist groups and networks working on the topic of feminist
+          programming:
+        </h2>
+
+        <div className="mapping-cards-container">
           {groups &&
             groups.map((item, i) => <GroupsCard group={item} key={i} />)}
         </div>
         <GroupsForm />
-      </div>
-      <div className="ankerlinks-container">
-        <a className="ankerlinks" href="#group-list-top">
-          back to the top
-        </a>
+        <div className="ankerlinks-container">
+          <a className="ankerlinks" href="#groups-list-top">
+            back to the top
+          </a>
+        </div>
       </div>
     </>
   );
