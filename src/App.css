@@ -4,8 +4,8 @@
   background-color: rgb(173, 166, 218);
 }
 
-h2,
 h1,
+h2,
 h3,
 h4 {
   text-align: center;
@@ -14,7 +14,8 @@ h4 {
 }
 
 h1 {
-  font-size: clamp(2rem, 4.5vw, 5rem);
+  font-size: clamp(1.5rem, 2em, 5rem);
+  margin-top: 1.5em;
 }
 h2 {
   font-size: clamp(1.3rem, 2.7vw, 3rem);
@@ -29,26 +30,22 @@ body {
 }
 
 .ankerlinks {
-  /* "back-to-top" */
-  display: block;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: baseline;
-  height: 20px;
-  width: 150px;
   background-color: black;
   color: white;
   text-decoration: none;
-  font-family: Verdana, Geneva, sans-serif;
-  font-size: 15px;
-  font-weight: bold;
-  padding: 6px 4px;
-  margin: 10px;
+  font-size: 0.8em;
+  font-weight: bolder;
+  padding: 4px 6px;
+  margin-top: 1.5em;
 }
-.ankerlinks-container {
-  display: flex;
-  flex-direction: row;
+input {
+  width: 100%;
+}
+
+button {
+  background-color: black;
+  color: white;
+  margin-top: 10px;
 }
 
 /*Components:*/
@@ -59,12 +56,8 @@ body {
   background-size: cover;
   height: 30vh;
   width: 100vw;
-  padding-top: 2rem;
+  padding-top: 2.5em;
   margin-bottom: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
   position: relative;
@@ -77,7 +70,20 @@ body {
   top: 0%;
   left: 0%;
 }
-
+.nav-top-menu {
+  display: none;
+}
+.nav-side-menu {
+  padding-top: 2em;
+  background-color: rgb(255, 255, 255, 0.9);
+  width: 10rem;
+  height: 100vh;
+  position: absolute;
+  top: 2.5em;
+  left: -10rem;
+  transition: 0.1s ease;
+  z-index: 1000;
+}
 .nav-side-menu.in {
   left: 0;
   /*  transform: translateX(10rem); */
@@ -87,10 +93,8 @@ body {
   font-size: 2em;
   position: fixed;
   cursor: pointer;
-
   color: white;
 }
-
 .nav-link {
   display: block;
   font-size: 0.8em;
@@ -104,39 +108,28 @@ body {
   background-color: rgb(78, 1, 122);
   color: white;
 }
-.nav-side-menu {
-  padding-top: 2em;
-  background-color: rgb(255, 255, 255, 0.9);
-  width: 10rem;
-  height: 100vh;
-  position: absolute;
-  top: 2.5em;
-  left: -10rem;
-  transition: 0.1s ease;
-  z-index: 1000;
-}
 
 /*Sidebar*/
-.sidebar-container {
+/* .sidebar-container {
   width: 15%;
 }
 
 ul {
   list-style: none;
   text-align: left;
-}
+} */
 
 /*Footer*/
 
 .footer {
-  /* margin-top: 10px;
-  padding: 20px; */
+  margin-top: 20px;
   background-color: #282c34;
   height: 10vh;
   padding-top: 10px;
-  display: flex;
+  text-align: center;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
   font-size: small;
   color: white;
   width: 100%;
@@ -148,37 +141,48 @@ ul {
 .home-container {
   display: flex;
   flex-flow: column;
-  margin: 30px;
-  text-align: justify;
   align-items: center;
+  margin: 20px;
+  text-align: justify;
   gap: 10px;
 }
-.home-info-cards-sub-views {
+.home-section1-welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-section1-img img {
+  width: 80vw;
+  height: 40vh;
+  object-fit: contain;
+}
+.home-info-card-sub-views {
   display: flex;
   flex-direction: column;
   width: 100%;
   border-top: 1px solid black;
+  padding-top: 10px;
+  align-items: center;
 }
 .home-info-cards-img {
-  width: 100%;
+  width: 95%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: baseline;
-  padding: 5px;
+  padding: 10px;
   background-color: white;
 }
 
-.image-home img {
-  width: 250px;
-  height: 200px;
-  object-fit: contain;
-}
-
 .home-info-cards-sub-views .nav-link {
-  width: 90px;
+  width: 80px;
   text-align: center;
   align-self: flex-end;
+  background-color: blueviolet;
+  color: black;
+  padding: 0.4em;
+  font-size: 0.8em;
 }
 /*view_activist_groups*/
 
@@ -192,6 +196,7 @@ ul {
 .group-card {
   display: flex;
   flex-direction: column;
+  text-align: justify;
   gap: 10px;
   width: 60vw;
   padding: 20px;
@@ -208,34 +213,28 @@ ul {
   color: white;
   border-radius: 20px;
 }
-.groups-card-text {
-  display: flex;
-  flex-direction: column;
-  text-align: justify;
-}
 
 /*view_pioneers*/
 .pioneers-list-Container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 20px; /* gap between headline, mapping-cards-container & form,  */
 }
 
 .pioneer-card {
   display: flex;
   flex-direction: column;
+  text-align: justify;
   gap: 10px;
   background-color: white;
   border: 1px solid black;
   border-radius: 20px;
   width: 60vw;
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* gap between cards */
 }
-.pioneers-cards-text {
-  text-align: justify;
-}
+
 .pioneer-img {
   width: 100%;
 }
@@ -246,22 +245,61 @@ ul {
   color: white;
   border-radius: 20px;
 }
-input {
-  width: 100%;
-}
-
-button {
-  background-color: black;
-  color: white;
-  margin-top: 10px;
-}
 
 /*view_events*/
 .events-list {
   height: 100vh;
 }
-/* 
-@media screen and (max-width: 1024px) {
+
+@media screen and (min-width: 460px) {
+  .nav-top-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .nav-top-menu .nav-link {
+    font-size: 0.6;
+  }
+  .home-section1-welcome {
+    display: flex;
+    flex-flow: row-reverse;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  .home-section1-img {
+    padding: 15px;
+  }
+  .home-section1-img img {
+    width: 40vw;
+    height: 40vh;
+    object-fit: cover;
+  }
+
+  .home-section2-all-sub-views {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .home-info-card-sub-views {
+    width: 30%;
+    border-top: 1px solid black;
+    padding-top: 10px;
+  }
+  .home-info-cards-img {
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+  .home-infocard-sub-img-top {
+    width: 15em;
+    height: 10em;
+  }
+  .home-infocard-sub-img-bottom {
+    width: 8em;
+    height: 10em;
+  }
+
+  /* 
   .ankerlinks-container {
     justify-content: center;
     margin-top: 10px;
@@ -320,6 +358,5 @@ button {
     width: 80vw;
     margin: auto;
     height: 300px;
-  }
+  } */
 }
- */

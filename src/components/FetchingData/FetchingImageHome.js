@@ -3,7 +3,7 @@ import WomenInProgramming from "../../assets/imgHome/WomenInProgramming.jpg";
 
 export default function FetchingImageHome() {
   return (
-    <div className="image-home">
+    <div className="home-section1-img">
       <img
         src={WomenInProgramming}
         /* src={"https://source.unsplash.com/random/400x250/?Women & Computer"} */

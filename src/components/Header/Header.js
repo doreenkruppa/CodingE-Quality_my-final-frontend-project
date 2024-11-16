@@ -21,7 +21,24 @@ export default function Header() {
           </NavLink>
 
           <NavLink className="nav-link" to="/groups">
-            activist groups & networks
+            activist groups
+          </NavLink>
+
+          <NavLink className="nav-link" to="/pioneers">
+            pioneers
+          </NavLink>
+
+          <NavLink className="nav-link" to="/events">
+            events
+          </NavLink>
+        </div>
+        <div className="nav-top-menu">
+          <NavLink className="nav-link" to="/">
+            home
+          </NavLink>
+
+          <NavLink className="nav-link" to="/groups">
+            activist groups
           </NavLink>
 
           <NavLink className="nav-link" to="/pioneers">
