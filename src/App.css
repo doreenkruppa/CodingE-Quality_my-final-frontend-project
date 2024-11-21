@@ -13,13 +13,18 @@ h4 {
   margin: auto;
 }
 
+h5 {
+  text-align: left;
+  font-size: 0.9rem;
+  text-decoration: underline;
+}
 h1 {
   font-size: clamp(1.5rem, 2em, 5rem);
   margin-top: 1.5em;
 }
 h2 {
   font-size: clamp(1.3rem, 2.7vw, 3rem);
-  margin: 10px 10px;
+  margin: 1em auto;
 }
 h3 {
   font-size: clamp(1.2rem, 2.5vw, 2.7rem);
@@ -57,6 +62,7 @@ button {
   height: 30vh;
   width: 100vw;
   padding-top: 2.5em;
+  padding-bottom: 10px;
   margin-bottom: 10px;
   font-size: calc(10px + 2vmin);
   color: white;
@@ -110,14 +116,10 @@ button {
 }
 
 /*Sidebar*/
-/* .sidebar-container {
-  width: 15%;
+.groups-sidebar-container,
+.pioneers-sidebar-container {
+  display: none;
 }
-
-ul {
-  list-style: none;
-  text-align: left;
-} */
 
 /*Footer*/
 
@@ -138,7 +140,7 @@ ul {
 /*Views:*/
 
 /* view_home*/
-.home-container {
+.home-main {
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -185,12 +187,18 @@ ul {
   font-size: 0.8em;
 }
 /*view_activist_groups*/
-
-.groups-list-Container {
+.groups-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
+  padding: 10px;
+}
+.groups-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* gap between headline, mapping-cards-container  */
 }
 
 .group-card {
@@ -206,6 +214,12 @@ ul {
   margin-bottom: 20px;
 }
 
+.group-img {
+  width: 100%;
+}
+.groups-cards-text {
+  width: 90%;
+}
 .group-form {
   width: 60vw;
   padding: 20px;
@@ -215,11 +229,18 @@ ul {
 }
 
 /*view_pioneers*/
-.pioneers-list-Container {
+.pioneers-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px; /* gap between headline, mapping-cards-container & form,  */
+  gap: 10px;
+  padding: 10px;
+}
+.pioneers-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* gap between headline, mapping-cards-container  */
 }
 
 .pioneer-card {
@@ -238,6 +259,9 @@ ul {
 .pioneer-img {
   width: 100%;
 }
+.pioneers-cards-text {
+  width: 100%;
+}
 .pioneers-form {
   width: 60vw;
   padding: 20px;
@@ -251,7 +275,7 @@ ul {
   height: 100vh;
 }
 
-@media screen and (min-width: 460px) {
+@media screen and (min-width: 768px) {
   .nav-top-menu {
     display: flex;
     flex-direction: row;
@@ -259,6 +283,11 @@ ul {
   }
   .nav-top-menu .nav-link {
     font-size: 0.6;
+  }
+  .home-container {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
   }
   .home-section1-welcome {
     display: flex;
@@ -299,64 +328,68 @@ ul {
     height: 10em;
   }
 
-  /* 
-  .ankerlinks-container {
-    justify-content: center;
-    margin-top: 10px;
-  }
   .sidebar-container {
-    width: 80%;
-    height: 150px;
-    overflow: auto;
-    margin: auto;
-    border: none;
-  }
-  .pioneers-list-Container {
+    border-right: 1px solid black;
+    padding-right: 20px;
+    width: 25%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
   }
-  .groups-list-Container {
+  .side-nav-link {
+    text-decoration: none;
+    display: block;
+  }
+  .side-nav-link:hover {
+    font-weight: bold;
+  }
+
+  .groups-sidebar-container,
+  .pioneers-sidebar-container {
     display: flex;
     flex-direction: column;
+    text-align: left;
   }
-  .groups-cards-container {
+
+  .pioneers-container {
     display: flex;
-    flex-direction: column;
-  }
-  .home-container {
-    display: flex;
-    flex-direction: column;
-  }
-  .group-card {
-    min-width: 200px;
-    height: 300px;
-    margin: auto;
-  }
-  .group-form {
-    min-width: 200px;
-    height: 300px;
-    margin: auto;
-    overflow: auto;
-  }
-  .pioneer-card {
-    min-width: 200px;
-    height: 300px;
-    margin: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 10px;
   }
   .pioneers-form {
-    min-width: 200px;
-    height: 300px;
-    margin: auto;
-    overflow: auto;
+    width: 25%;
   }
-  .welcome-text {
-    width: 80vw;
-    margin: auto;
-    height: 300px;
+  .mapping-cards-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
   }
-  .image-home {
-    width: 80vw;
-    margin: auto;
-    height: 300px;
-  } */
+  .pioneer-card {
+    width: 25%;
+  }
+
+  .groups-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .groups-form {
+    width: 25%;
+  }
+
+  .mapping-cards-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 5px;
+  }
+
+  .group-card {
+    width: 25%;
+  }
 }

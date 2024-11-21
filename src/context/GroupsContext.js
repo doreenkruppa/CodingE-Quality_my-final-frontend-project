@@ -10,7 +10,7 @@ export const starterGroups = [
     img: "https://feministinternet.org/sites/default/files/2022-02/logo-emblem-text_1.png",
   },
   {
-    name: "Feministische Digitalppolitik",
+    name: "Feministische Digitalpolitik",
     description:
       "Feministische Digitalpolitik analysiert bestehende gesellschaftliche Machtverhältnisse kritisch und wirkt darauf hin, Gerechtigkeit herzustellen.",
     contact: "https://feministtechpolicy.org/",

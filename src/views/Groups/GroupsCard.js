@@ -3,12 +3,8 @@ import React from "react";
 export default function GroupsCard({ group }) {
   return (
     <div className="group-card">
-      <img
-        className="image-group-card"
-        src={group.img}
-        alt="Logo of the group"
-      />
-      <div className="groups-card-text">
+      <img className="group-img" src={group.img} alt="Logo of the group" />
+      <div className="groups-cards-text">
         <h3>{group.name}</h3>
         <p>
           <b> Description:</b> <br />
