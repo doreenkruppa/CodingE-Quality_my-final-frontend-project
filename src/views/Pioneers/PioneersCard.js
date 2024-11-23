@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function PioneersCard({ pioneer }) {
+export default function PioneersCard({ pioneer, onDelete }) {
   return (
     <div className="pioneer-card">
       <img className="pioneer-img" src={pioneer.img} alt={pioneer.name} />
@@ -16,6 +16,9 @@ export default function PioneersCard({ pioneer }) {
           <a href={pioneer.furtherInfo}> here</a>
         </p>
       </div>
+      <button className="delete-button" onClick={() => onDelete(pioneer.name)}>
+        Delete
+      </button>
     </div>
   );
 }

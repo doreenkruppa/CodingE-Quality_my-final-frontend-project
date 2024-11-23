@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function GroupsCard({ group }) {
+export default function GroupsCard({ group, onDelete }) {
   return (
     <div className="group-card">
       <img className="group-img" src={group.img} alt="Logo of the group" />
@@ -15,6 +15,9 @@ export default function GroupsCard({ group }) {
           <a href={group.contact}>{group.contact}</a>
         </p>
       </div>
+      <button className="delete-button" onClick={() => onDelete(group.name)}>
+        Delete
+      </button>
     </div>
   );
 }

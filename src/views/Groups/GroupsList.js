@@ -1,13 +1,16 @@
 import React, { useContext } from "react";
-
 import GroupsCard from "./GroupsCard";
 import { GroupsContext } from "../../context/GroupsContext";
 import GroupsForm from "./GroupsForm";
 import Sidebar from "../../components/Sidebar/Sidebar";
 
 export default function GroupsList() {
-  const { groups } = useContext(GroupsContext);
+  const { groups, setGroups } = useContext(GroupsContext);
 
+  const handleDelete = (groupName) => {
+    const updatedGroups = groups.filter((group) => group.name !== groupName);
+    setGroups(updatedGroups); // Aktualisiert die Gruppen im Context
+  };
   return (
     <>
       <div className="groups-container">
@@ -21,7 +24,9 @@ export default function GroupsList() {
 
           <div className="mapping-cards-container">
             {groups &&
-              groups.map((item, i) => <GroupsCard group={item} key={i} />)}
+              groups.map((item, i) => (
+                <GroupsCard group={item} key={i} onDelete={handleDelete} />
+              ))}
           </div>
 
           <div className="ankerlinks-container">
