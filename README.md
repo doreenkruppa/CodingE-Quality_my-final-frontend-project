@@ -36,7 +36,7 @@ The four page components are linked to via NavLinks in [Header](./src/components
 While the Home-Page only gives general information of the intention of the App and shows an overview of the other Pages, the other 3 pages (Pioneer-Page, Group-Page, Event-Page) come with functionality.
 The main files [PioneersList.js](./src/views/Pioneers/PioneersList.js), [GroupsList.js](./src/views/Groups/GroupsList.js) and EventsList.js each have 2 nested feature-specific components: a [Card-Component](./src/views/Groups/GroupsCard.js) and a [FormComponent](./src/views/Groups/GroupsForm.js), which are each connected with a local data storage by using useState and [useContext](./src/context/GroupsContext.js).
 While via Form-Component the user can add data in a specific structure, the Card-Component makes sure, the stored Data is in a specific/ always same layout displayed on the Pioneers-Page or Group-Page or Event-Page.
-Via UseContext the Name of every added Data-Komplex is also added to the Sidebar, which is only shown in desktop browsers but hidden in mobile.
+Via UseContext the Name of every added Data-Komplex is also added to the Sidebar, which is only shown in desktop browsers but hidden in mobile.The User also can delete single Cards via a deleteButton.
 
 #### Demo Functionality
 
